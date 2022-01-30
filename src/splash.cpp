@@ -34,7 +34,7 @@ void Splash::update() {
     // handle input allowing the player to skip the animation
     if (IsMouseButtonPressed(0) || IsMouseButtonPressed(1) ||
         IsKeyPressed(KEY_SPACE)) {
-        done_ = true;
+        /* done_ = true; */
     }
     ++frame_counter;
 }
