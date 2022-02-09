@@ -1,0 +1,27 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-std=c++20",
+      "-Wall",
+      "-Wno-missing-braces",
+      "-Wunused-result",
+      "-D_DEFAULT_SOURCE",
+      "-O2",
+      "-D_DEFAULT_SOURCE",
+      "-I.",
+      "-I/home/akil/Project/raylib/nuzlike/src",
+      "-I/home/akil/Project/raylib/nuzlike/src/external",
+      "-I/home/akil/Project/raylib/nuzlike/src/extras",
+      "-I/usr/include",
+      "-DPLATFORM_DESKTOP",
+      "-o",
+      "raylib_template",
+      "main.cxx"
+    ],
+    "directory": "/home/akil/Project/raylib/nuzlike/src",
+    "file": "/home/akil/Project/raylib/nuzlike/src/main.cxx",
+    "output": "/home/akil/Project/raylib/nuzlike/src/raylib_template"
+  }
+]

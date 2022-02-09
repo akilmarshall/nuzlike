@@ -29,7 +29,7 @@
 PLATFORM              ?= PLATFORM_DESKTOP
 
 # Define project variables
-PROJECT_NAME          ?= raylib_template
+PROJECT_NAME          ?= Nuzlike
 PROJECT_VERSION       ?= 0.1
 PROJECT_BUILD_PATH    ?= ../build
 
@@ -373,9 +373,8 @@ endif
 # Define source code object files required
 #------------------------------------------------------------------------------------------------
 PROJECT_SOURCE_FILES ?= \
-    main.cpp \
-	splash.cpp \
-	ray_animation.cpp
+    main.cxx \
+	pure.cxx \
 
 # Define all object files from source files
 OBJS = $(patsubst %.c, %.o, $(PROJECT_SOURCE_FILES))
