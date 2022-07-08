@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/nuzlike/static/js/main.ccbbe153.js",
+    "main.js": "/nuzlike/static/js/main.9bed3130.js",
     "static/js/787.06fa6b40.chunk.js": "/nuzlike/static/js/787.06fa6b40.chunk.js",
     "index.html": "/nuzlike/index.html",
-    "main.ccbbe153.js.map": "/nuzlike/static/js/main.ccbbe153.js.map",
+    "main.9bed3130.js.map": "/nuzlike/static/js/main.9bed3130.js.map",
     "787.06fa6b40.chunk.js.map": "/nuzlike/static/js/787.06fa6b40.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.ccbbe153.js"
+    "static/js/main.9bed3130.js"
   ]
 }
