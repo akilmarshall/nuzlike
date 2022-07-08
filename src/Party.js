@@ -1,28 +1,31 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { HStack, Image, Center, Heading } from '@chakra-ui/react'
-import { staticSpriteURL } from './Sprites'
+import { staticSpriteURL } from './PkmnInfo'
+import { Card, Grid } from '@nextui-org/react'
 
 function Party() {
     const party = useSelector(state => state.player.party)
-    console.log(party)
 
     function renderPkmn(id) {
         return (
-            <Image src={staticSpriteURL(id)} />
+        <Grid>
+            <Card isHoverable variant="bordered" css={{ mw: "120px" }} >
+                <Card.Body>
+                    <img src={staticSpriteURL(id)} alt=""/>
+                </Card.Body>
+            </Card>
+        </Grid>
         )
     }
 
     return (
     <>
-        <Center>
-        <Heading as='h2' size='lg'>Pokemon Party</Heading>
-        </Center>
-        <Center>
-            <HStack>
-                {party.map(renderPkmn)}
-            </HStack>
-        </Center>
+        <center>
+        <h2>Pokemon Party</h2>
+        </center>
+        <Grid.Container justify='center' direction='row' gap={2}>
+            {party.map(renderPkmn)}
+        </Grid.Container>
     </>
     )
 }

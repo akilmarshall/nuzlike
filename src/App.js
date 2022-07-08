@@ -1,34 +1,34 @@
 import React from 'react'
-import { 
-    Heading,
-    Center,
-    Container,
-    Text,
-    VStack,
-    Button,
-    Image,
-} from '@chakra-ui/react'
-import { staticSpriteURL } from './Sprites'
+import { Button, Text, Grid } from '@nextui-org/react'
+import { staticSpriteURL } from './PkmnInfo'
 
 
 function App() {
     const pokemon = 1 + Math.floor((Math.random() * 386))
     return (
     <>
-        <Center>
-              <Heading as='h2' size='3xl'>Nuzlike</Heading>
-        </Center>
-        <Container centerContent>
-            <Text>Your favorite Nuzlocke experience without any of the awful grinding.</Text>
-        </Container>
-        <Center>
-            <Image src={staticSpriteURL(pokemon)} />
-        </Center>
-        <VStack>
-            <Button>Start</Button>
-            <Button>Settings</Button>
-            <Button>About</Button>
-        </VStack>
+        <center>
+            <h2>Nuzlike</h2>
+        </center>
+        <center>
+            <img src={staticSpriteURL(pokemon)} alt=""/>
+        </center>
+        <center>
+            <Text>Your favorite <b>Nuz</b>locke experience without any of the awful grinding and instead emphasis on the rogue<b>like</b> elements.</Text>
+        </center>
+        <center>
+        <Grid.Container alignItems='center' direction='column' gap={1}>
+            <Grid xs={2}>
+                <Button flat color='primary'>Start</Button>
+            </Grid>
+            <Grid xs={2}>
+                <Button flat color='primary'>Settings</Button>
+            </Grid>
+            <Grid xs={2}>
+                <Button flat color='primary'>About</Button>
+            </Grid>
+        </Grid.Container>
+        </center>
     </>
     );
 }
