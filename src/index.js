@@ -1,12 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-// import App from './App';
-import App from './Party'
+import App from './App';
+import ChooseStarter from './StarterSelect';
+import Settings from './Settings';
+import About from './About';
+import Party from './Party';
 import reportWebVitals from './reportWebVitals'
 import { NextUIProvider } from '@nextui-org/react'
 import { Provider } from 'react-redux'
 import store from './store'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,7 +17,13 @@ root.render(
     <Provider store={store}>
         <NextUIProvider>
             <BrowserRouter>
-                <App />
+                <Routes>
+                    <Route path="/" element={<App />}/>
+                    <Route path="choose-starter" element={<ChooseStarter />}/>
+                    <Route path="settings" element={<Settings />}/>
+                    <Route path="about" element={<About />}/>
+                    <Route path="party" element={<Party />}/>
+                </Routes>
             </BrowserRouter>
         </NextUIProvider>
     </Provider>

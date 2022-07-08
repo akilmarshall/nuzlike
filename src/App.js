@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, Text, Grid } from '@nextui-org/react'
 import { staticSpriteURL } from './PkmnInfo'
+import { Link } from 'react-router-dom'
 
 
 function App() {
@@ -19,13 +20,19 @@ function App() {
         <center>
         <Grid.Container alignItems='center' direction='column' gap={1}>
             <Grid xs={2}>
-                <Button flat color='primary'>Start</Button>
+                <Button flat color='primary'>
+                    <Link to="/choose-starter" as={Button}>Start</Link>
+                </Button>
             </Grid>
             <Grid xs={2}>
-                <Button flat color='primary'>Settings</Button>
+                <Button flat color='primary'>
+                    <Link to="/settings" as={Button}>Settings</Link>
+                </Button>
             </Grid>
             <Grid xs={2}>
-                <Button flat color='primary'>About</Button>
+                <Button flat color='primary'>
+                    <Link to="/about" as={Button}>About</Link>
+                </Button>
             </Grid>
         </Grid.Container>
         </center>
