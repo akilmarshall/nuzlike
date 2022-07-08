@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/nuzlike/static/js/main.ccbbe153.js",
+    "static/js/787.06fa6b40.chunk.js": "/nuzlike/static/js/787.06fa6b40.chunk.js",
+    "index.html": "/nuzlike/index.html",
+    "main.ccbbe153.js.map": "/nuzlike/static/js/main.ccbbe153.js.map",
+    "787.06fa6b40.chunk.js.map": "/nuzlike/static/js/787.06fa6b40.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.ccbbe153.js"
+  ]
+}
